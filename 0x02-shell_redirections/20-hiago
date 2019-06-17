@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -cd Cc
+tr --delete Cc
