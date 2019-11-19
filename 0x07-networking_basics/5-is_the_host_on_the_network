@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
-# explain
+# using ping 5 times to an ip
+if [$# -ne 1]
+then
+        echo “”
+else:
+        IP_ADD=$1
+        ping -c 5 “$IP_ADD”
+fi
