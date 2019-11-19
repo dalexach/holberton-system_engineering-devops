@@ -2,8 +2,8 @@
 # using ping 5 times to an ip
 if [$# -ne 1]
 then
-        echo “”
+        echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else:
         IP_ADD=$1
-        ping -c 5 “$IP_ADD”
+        ping -c 5 "$IP_ADD"
 fi
