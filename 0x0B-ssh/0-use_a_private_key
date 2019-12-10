@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Script to connect the server using the private key
 # user: ubuntu
 
