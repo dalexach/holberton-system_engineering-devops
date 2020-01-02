@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script to configure Nginx listening on port 80
+
+service nginx stop
+sed -i "s/xites-enabled/sites-available/" /etc/nginx/nginx.conf
+service nginx start
