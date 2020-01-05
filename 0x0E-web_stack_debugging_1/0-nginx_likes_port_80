@@ -2,5 +2,5 @@
 # Script to configure Nginx listening on port 80
 
 service nginx stop
-sed -i "s/xites-enabled/sites-available/" /etc/nginx/nginx.conf
+sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
 service nginx start
