@@ -36,7 +36,6 @@ defaults
                            
 backend web-backend        
         balance roundrobin
-        redirect scheme https if !{ ssl_fc }
         server 893-web-01 34.74.41.230:80 check
         server 893-web-02 34.74.9.120:80 check
                            
