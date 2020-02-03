@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     for task in TODO:
         dtask = {}
-        ID = user.get('userId')
+        ID = task.get('userId')
         dtask['task'] = task.get('title')
         dtask['completed'] = task.get('completed')
         dtask['username'] = d_username.get(ID)
