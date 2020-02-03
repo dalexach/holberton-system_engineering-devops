@@ -24,4 +24,4 @@ if __name__ == "__main__":
         fill = csv.writer(f, delimiter=',', quoting=csv.QUOTE_ALL)
         for task in TODO:
             fill.writerow([ID, user.get('username'),
-                            task.get('completed'), task.get('title')])
+                           task.get('completed'), task.get('title')])
