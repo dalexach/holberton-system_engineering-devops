@@ -24,14 +24,14 @@ def recurse(subreddit, hot_list=[]):
         return None
     jreq = request.json()
     if 'data' in jreq:
-        data = jreq.get("data")
-        if not data.get("children"):
+        jdata = jreq.get("data")
+        if not jdata.get("children"):
             return (hot_list)
-        for hpost in data.get("children"):
+        for hpost in jdata.get("children"):
             hot_list += hpost.get("data").get("title")
-        if not data.get("after"):
+        if not jdata.get("after"):
             return hot_list
-        subreddit[1] = data.get("after")
+        subreddit[1] = jdata.get("after")
         recurse(subreddit, hot_list)
         if hot_list[-1] is None:
             del hot_list[-1]
